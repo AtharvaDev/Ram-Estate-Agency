@@ -24,6 +24,7 @@ function Post() {
   return (
     <main>
       {console.log(postData)}
+      {postData && console.log(postData[0].author._ref)}
       <section className="container mx-auto">
         <h1 className="text-5xl flex justify-center cursive">
           Blog Posts Page
@@ -35,7 +36,7 @@ function Post() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {postData &&
               postData.map((post, index) => (
-                <article>
+                <article key={index}>
                   <Link
                     to={"/post/" + post.slug.current}
                     key={post.slug.current}

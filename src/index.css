@@ -1,6 +1,10 @@
 @import url("https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css");
 @import url("https://unpkg.com/@tailwindcss/typography@0.4.x/dist/typography.min.css");
 
+* { 
+	box-sizing: border-box;
+}
+
 .cursive {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 700;

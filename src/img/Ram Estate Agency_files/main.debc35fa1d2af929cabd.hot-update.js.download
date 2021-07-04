@@ -1,0 +1,27 @@
+webpackHotUpdate("main",{
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/post.css":
+/*!************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!./node_modules/postcss-loader/src??postcss!./src/components/post.css ***!
+  \************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
+___CSS_LOADER_EXPORT___.push([module.i, "@import url(https://fonts.googleapis.com/css2?family=Jost:display=swap);"]);
+// Module
+___CSS_LOADER_EXPORT___.push([module.i, ".post__container {\r\n  width: 100vw;\r\n  height: auto;\r\n  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));\r\n\r\n  position: relative;\r\n}\r\n\r\n.post__container__img {\r\n  width: 100%;\r\n  object-fit: cover !important;\r\n}\r\n\r\n.post__container__text {\r\n  text-align: center;\r\n  position: absolute;\r\n  top: 50%;\r\n  left: 50%;\r\n  transform: translate(-50%, -50%);\r\n  color: #2d3954 !important;\r\n  font-family: \"Jost\", sans-serif;\r\n  border: 7px solid black;\r\n  padding: 20px;\r\n  background-color: rgba(0, 0, 0, 0.2);\r\n}\r\n\r\n.post__container__text > h1 {\r\n  font-weight: 800 !important;\r\n  line-height: 1.3 !important;\r\n  z-index: 1;\r\n}\r\n\r\n.font-normal {\r\n  font-weight: 400;\r\n}\r\n\r\n@media (min-width: 992px) {\r\n  h1,\r\n  .h1 {\r\n    font-size: 4.142em;\r\n    line-height: 1.31818182em;\r\n  }\r\n}\r\n\r\nh1 {\r\n  line-height: 40px;\r\n  font-size: 36px;\r\n}\r\n", "",{"version":3,"sources":["webpack://src/components/post.css"],"names":[],"mappings":"AAEA;EACE,YAAY;EACZ,YAAY;EACZ,yEAAyE;;EAEzE,kBAAkB;AACpB;;AAEA;EACE,WAAW;EACX,4BAA4B;AAC9B;;AAEA;EACE,kBAAkB;EAClB,kBAAkB;EAClB,QAAQ;EACR,SAAS;EACT,gCAAgC;EAChC,yBAAyB;EACzB,+BAA+B;EAC/B,uBAAuB;EACvB,aAAa;EACb,oCAAoC;AACtC;;AAEA;EACE,2BAA2B;EAC3B,2BAA2B;EAC3B,UAAU;AACZ;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE;;IAEE,kBAAkB;IAClB,yBAAyB;EAC3B;AACF;;AAEA;EACE,iBAAiB;EACjB,eAAe;AACjB","sourcesContent":["@import url(\"https://fonts.googleapis.com/css2?family=Jost:display=swap\");\r\n\r\n.post__container {\r\n  width: 100vw;\r\n  height: auto;\r\n  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));\r\n\r\n  position: relative;\r\n}\r\n\r\n.post__container__img {\r\n  width: 100%;\r\n  object-fit: cover !important;\r\n}\r\n\r\n.post__container__text {\r\n  text-align: center;\r\n  position: absolute;\r\n  top: 50%;\r\n  left: 50%;\r\n  transform: translate(-50%, -50%);\r\n  color: #2d3954 !important;\r\n  font-family: \"Jost\", sans-serif;\r\n  border: 7px solid black;\r\n  padding: 20px;\r\n  background-color: rgba(0, 0, 0, 0.2);\r\n}\r\n\r\n.post__container__text > h1 {\r\n  font-weight: 800 !important;\r\n  line-height: 1.3 !important;\r\n  z-index: 1;\r\n}\r\n\r\n.font-normal {\r\n  font-weight: 400;\r\n}\r\n\r\n@media (min-width: 992px) {\r\n  h1,\r\n  .h1 {\r\n    font-size: 4.142em;\r\n    line-height: 1.31818182em;\r\n  }\r\n}\r\n\r\nh1 {\r\n  line-height: 40px;\r\n  font-size: 36px;\r\n}\r\n"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
+
+
+/***/ })
+
+})
+//# sourceMappingURL=main.debc35fa1d2af929cabd.hot-update.js.map

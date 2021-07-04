@@ -1,43 +1,80 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
+
+import logo from "../img/logo1-Rbg.png";
+import "./navBar.css";
+import styled from "styled-components";
 
 function NavBar() {
+  const [show, handleShow] = useState(false);
+  const { pathname } = useLocation();
+  // console.log(pathname);
+
+  useEffect(() => {
+    //it listens to the scroll so when you scroll down app haas to do something
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        handleShow(true);
+      } else {
+        handleShow(false);
+      }
+    });
+    // so return will remove event listener before the useEffect runs again
+    return () => {
+      window.removeEventListener("scroll", null);
+    };
+  }, []);
+
   return (
-    <header className="bg-red-600">
-      <div className="container mx-auto flex justify-between ">
-        <nav className="flex">
+    <div className={`LandNav ${show && "LandNav__black"}`}>
+      <NavLink
+        id="logo"
+        className="LandNav__logo"
+        activeClassName="text-white"
+        to="/"
+      >
+        <img src={logo} alt="Ram Real Estate" />
+      </NavLink>
+      <div className="LandNav__center">
+        <p>
           <NavLink
-            className="inflex-flex items-center py-6 px-3 mr-4 text-red-100 hover:text-green-800 text-4xl font-bold cursive tracking-widest"
-            activeClassName="text-white"
-            to="/"
-          >
-            Atharva
-          </NavLink>
-          <NavLink
-            className="inflex-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800"
-            activeClassName="text-red-100 bg-red-700"
+            className="text-red-200 hover:text-green-800"
+            activeClassName=""
             to="/post"
           >
-            Blog Posts
+            Property
           </NavLink>
-          <NavLink
-            className="inflex-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800"
-            activeClassName="text-red-100 bg-red-700"
-            to="/project"
-          >
+          <Line
+            transition={{ duration: 0.75 }}
+            initial={{ width: "0%" }}
+            animate={{ width: pathname === "/post" ? "70%" : "0%" }}
+            whileHover={{ width: "50%" }}
+          />
+        </p>
+        <p>
+          <NavLink className="" activeClassName="" to="/project">
             Projects
           </NavLink>
-          <NavLink
-            className="inflex-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800"
-            activeClassName="text-red-100 bg-red-700"
-            to="/about"
-          >
+        </p>
+        <p>
+          <NavLink className="" activeClassName="" to="/about">
             About us
           </NavLink>
-        </nav>
+        </p>
       </div>
-    </header>
+    </div>
   );
 }
+
+const Line = styled(motion.div)`
+  height: 0.3rem;
+  background: #fbb03c;
+  width: 0%;
+  position: absolute;
+  // bottom: -80%;
+  // left: 60%;
+`;
 
 export default NavBar;

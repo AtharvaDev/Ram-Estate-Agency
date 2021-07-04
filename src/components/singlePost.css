@@ -1,0 +1,25 @@
+.singlePost__carousel {
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-bottom: 100px;
+}
+
+.singlePost {
+  margin-top: 13vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .singlePost {
+    padding: 0px;
+    background-color: #f3f7fd;
+    margin-top: 19vh;
+  }
+  .singlePost__body {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .singlePost__carousel {
+    margin: 10px !important;
+    padding-bottom: 10px;
+  }
+}

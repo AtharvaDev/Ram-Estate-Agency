@@ -1,21 +1,30 @@
 import React from "react";
-import bg from "../img/bg6M.jpg";
+import bg from "../img/bg-1.png";
+import NavBar from "./NavBar";
+import "./home.css";
 
 function Home() {
   return (
     <div>
-      <main>
-        <img
-          src={bg}
-          alt="bg"
-          className="absolute object-cover w-full h-full"
-        />
-        <section className="relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8">
-          <h1 className="text-6xl text-white font-bold leading-none cursive leading-none lg:leading-snug home-name">
-            welcomeeee
-          </h1>
+      <NavBar></NavBar>
+      <main className="home__container">
+        <img className="home__container__img" src={bg} alt="bg" />
+        <section className="home__container__text">
+          <h1>welcomeeee</h1>
         </section>
       </main>
+
+      {/* <iframe
+          title="contact us"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSf-xsxuLztuWZk7k5GzFuzjT8DpTAZgNt1etzKPgNsUmSEeDQ/viewform?embedded=true"
+          width="640"
+          height="943"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+        >
+          Loading…
+        </iframe> */}
     </div>
   );
 }

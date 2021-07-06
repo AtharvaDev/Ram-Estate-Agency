@@ -5,18 +5,37 @@ export default {
   fields: [
     {
       name: "title",
-      title: "Title",
-      discription: "Keep it short!!",
+      title: "Property Name",
+      description: "Keep it short!!",
       type: "string",
     },
     {
       name: "slug",
-      title: "Slug",
+      title: "Url Extension (Slug)",
       type: "slug",
+      description: "Click generate button",
       options: {
         source: "title",
         maxLength: 96,
       },
+    },
+    {
+      name: "propertyType",
+      title: "Property Type",
+      description: "Example - Resale, Brand New, Rental",
+      type: "string",
+    },
+    {
+      name: "bhk",
+      title: "BHK",
+      description: "Example - '2BHK/3BHK' or '2BHK'",
+      type: "string",
+    },
+    {
+      name: "area",
+      title: "Area",
+      description: "Example - 1200 sqft",
+      type: "string",
     },
     {
       name: "author",
@@ -40,7 +59,7 @@ export default {
       of: [{ type: "image" }],
     },
     {
-      name: "categories",
+      name: "category",
       title: "Categories",
       type: "array",
       of: [{ type: "reference", to: { type: "category" } }],

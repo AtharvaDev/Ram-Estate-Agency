@@ -3,7 +3,12 @@ import sanityClient from "../client.js";
 import { useParams } from "react-router-dom";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
-import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCube,
+  faHome,
+  faKey,
+  faMapMarkerAlt,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
@@ -30,7 +35,7 @@ function SinglePost() {
               }
           },
           body,
-          imagesGallery,
+          imagesGallery,propertyType,bhk,area, 
           "location": author->name,
           "authorImage": author->image
       }
@@ -46,9 +51,7 @@ function SinglePost() {
     <>
       <NavBar></NavBar>
 
-      <main
-        className="singlePost bg-gray-200 min-h-screen p-12"
-      >
+      <main className="singlePost bg-gray-200 min-h-screen p-12">
         {/* {console.log(singlePost)} */}
 
         {/* {console.log(urlFor(singlePost.imagesGallery[0].asset).url())} */}
@@ -66,9 +69,39 @@ function SinglePost() {
                   alt="{singlePost.name}"
                 /> */}
                 </div>
-                <p className="cursive flex items-center pl-2 text-2xl">
-                  <FontAwesomeIcon className="mx-3" icon={faMapMarkerAlt} />
-                  {singlePost.location}
+                <p className="cursive  pl-2 ">
+                  <div className="flex justify-between">
+                    <div>
+                      <FontAwesomeIcon
+                        className="singlePost__grid__faLocation"
+                        icon={faMapMarkerAlt}
+                      />
+                      {singlePost.location}
+                    </div>
+                    <div>
+                      <FontAwesomeIcon
+                        className="singlePost__grid__faLocation"
+                        icon={faKey}
+                      />
+                      <b>{singlePost.propertyType}</b>
+                    </div>
+                  </div>
+                  <div className="flex justify-between">
+                    <div>
+                      <FontAwesomeIcon
+                        className="singlePost__grid__faLocation"
+                        icon={faHome}
+                      />
+                      {singlePost.bhk}
+                    </div>
+                    <div>
+                      <FontAwesomeIcon
+                        className="singlePost__grid__faLocation"
+                        icon={faCube}
+                      />
+                      {singlePost.area}
+                    </div>
+                  </div>
                 </p>
               </div>
             </div>
@@ -86,27 +119,29 @@ function SinglePost() {
               dataset="production"
             />
           </div>
-          <div className="singlePost__carousel">
-            <Carousel
-              showArrows={true}
-              infiniteLoop={true}
-              showThumbs={false}
-              showStatus={false}
-              autoPlay={true}
-              interval={2000}
-            >
-              {/* {singlePost && console.log(singlePost.imagesGallery[0])} */}
-              {/* {console.log(singlePost.imagesGallery)} */}
-              {singlePost &&
-                singlePost.imagesGallery.map((singleImage) => (
-                  <div key={singleImage._key}>
-                    {/* {console.log(singleImage)} */}
-                    {/* {console.log(urlFor(singleImage.asset).url())} */}
-                    <img src={urlFor(singleImage.asset).url()} alt="" />
-                  </div>
-                ))}
-            </Carousel>
-          </div>
+          {singlePost.imagesGallery && (
+            <div className="singlePost__carousel">
+              <Carousel
+                showArrows={true}
+                infiniteLoop={true}
+                showThumbs={false}
+                showStatus={false}
+                autoPlay={true}
+                interval={2000}
+              >
+                {/* {singlePost && console.log(singlePost.imagesGallery[0])} */}
+                {/* {console.log(singlePost.imagesGallery)} */}
+                {singlePost &&
+                  singlePost.imagesGallery.map((singleImage) => (
+                    <div key={singleImage._key}>
+                      {/* {console.log(singleImage)} */}
+                      {/* {console.log(urlFor(singleImage.asset).url())} */}
+                      <img src={urlFor(singleImage.asset).url()} alt="" />
+                    </div>
+                  ))}
+              </Carousel>
+            </div>
+          )}
         </article>
       </main>
     </>

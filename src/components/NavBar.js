@@ -6,6 +6,8 @@ import { motion } from "framer-motion";
 import logo from "../img/logo1-Rbg.png";
 import "./navBar.css";
 import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 function NavBar() {
   const [show, handleShow] = useState(false);
@@ -62,6 +64,14 @@ function NavBar() {
           <NavLink className="" activeClassName="" to="/about">
             About us
           </NavLink>
+        </p>
+      </div>
+      <div className="LandNav__right">
+        <p>
+          <a href="tel:+91 99871 30717">
+            <FontAwesomeIcon style={{ marginRight: "10px" }} icon={faPhone} />
+            9987130717
+          </a>
         </p>
       </div>
     </div>

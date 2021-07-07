@@ -1,14 +1,6 @@
 import React, { useEffect, useState } from "react";
 import sanityClient from "../client.js";
 import { Link } from "react-router-dom";
-import {
-  faCube,
-  faHome,
-  faKey,
-  faMapMarkerAlt,
-  faPhone,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import NavBar from "./NavBar";
 import bg from "../img/bg-1.png";
 import "./post.css";
@@ -58,7 +50,7 @@ function Post() {
         />
         <section className="post__container__text">
           <h1 class="typo-header-text">
-            <span class="font-normal">Find Your</span> Perfect Place.
+            <span class="font-normal">Discover your </span> Dream Place.
           </h1>
         </section>
       </main>
@@ -72,7 +64,9 @@ function Post() {
         </h2> */}
 
         <div className="post__grid__title" style={{ margin: "30px" }}>
-          <h1 className="flex justify-center mb-0">Explore Good Places</h1>
+          <h1 className="flex justify-center mb-0">
+            Let’s find a place that’s perfect for you
+          </h1>
           <p className="flex justify-center mt-1 ">
             Our team ensures buyers with exposure to possibilities by finding a
             property as per the requirements, budgets, and objective of

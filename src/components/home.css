@@ -1,22 +1,213 @@
-.home__container {
-  width: 100vw;
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+.home > .LandNav {
+  background-color: white !important;
+}
+
+.home__banner {
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-
+  background-color: #1b0234;
   position: relative;
+  overflow: hidden;
+  padding: 135px 0px 140px 0px;
 }
 
-.home__container__img {
-  width: 100%;
-  height: 100% !important;
-  object-fit: cover !important;
-}
-
-.home__container__text {
-  text-align: center;
+.home__banner::before {
+  right: 0;
+  width: 80%;
+  content: "";
+  top: -10px;
+  height: 115%;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+  background-image: url(../img/homeAssets/b-shape1.png);
+}
+
+.home__banner__shapeOne {
+  left: 0;
+  top: 85px;
+  position: absolute;
+  transform: translate3d(0px, 0.029px, 0px) rotateX(0deg) rotateY(0deg)
+    rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+  -webkit-transform: translate3d(0px, 0.029px, 0px) rotateX(0deg) rotateY(0deg)
+    rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+}
+
+.home__banner__shapeTwo {
+  top: 0;
+  right: 50%;
+  position: absolute !important;
+  transform: translateX(80%);
+  animation: floatX 10s ease-in-out infinite;
+}
+
+.home__banner__shapeThree {
+  top: 0;
+  right: 0;
+  position: absolute !important;
+  animation: floatY 3s ease-in-out infinite;
+}
+
+.home__banner__shapefour {
+  position: absolute !important;
+  bottom: 0;
+  width: 100%;
+}
+
+.home__banner__shapefour img {
+  opacity: 0.7;
+}
+
+.home__banner_button {
   color: white;
+  z-index: 1;
+  border: 2px solid #6c2b95;
+  box-shadow: 0 0 0px 2px rgb(213 8 217 / 90%);
+  border-radius: 50%;
+  height: 50px;
+  width: 175px;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 50px;
+  font-weight: 700;
+  margin: auto;
+}
+
+.home__banner_button::before {
+  position: absolute;
+  content: "";
+  width: 0px;
+  height: 0px;
+  right: 0;
+  top: 45px;
+  right: 15px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+@keyframes floatY {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+@keyframes floatX {
+  0% {
+    transform: translateX(80%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(80%);
+  }
+}
+
+.container {
+  max-width: 1000px;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.home__banner__content {
+  z-index: 1;
+  display: flex;
+}
+
+.home__banner__content h1 {
+  color: white;
+  font-size: 50px;
+  padding: 18px 0px 20px 0px;
+  font-weight: 700;
+  margin: 0px;
+  line-height: 1.2;
+  font-family: "Poppins";
+  text-align: center;
+}
+
+.home__banner__content p {
+  color: #c4c4c4;
+  font-size: 20px;
+  padding-bottom: 35px;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding-top: 60px;
+    max-width: 540px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .home__banner__shapeTwo {
+    top: 150px;
+  }
+
+  .home__banner::before {
+    top: 50px;
+  }
+
+  .home__banner__content {
+    flex-direction: column;
+  }
+
+  .home__banner__content h1 {
+    text-align: center;
+  }
+}
+
+/* section end ................................................................................ */
+
+.home__contact {
+  background-image: url("../img/HomeContact/1.jpg");
+  background-position: center left;
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.home__contact > div {
+  background-color: #00335a;
+  opacity: 0.85;
+}
+
+.home__contact > div > iframe {
+  margin: auto;
 }

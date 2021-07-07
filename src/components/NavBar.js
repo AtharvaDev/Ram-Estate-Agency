@@ -44,22 +44,34 @@ function NavBar() {
           <NavLink
             className="text-red-200 hover:text-green-800"
             activeClassName=""
-            to="/post"
+            to="/"
           >
-            Property
+            Home
           </NavLink>
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
-            animate={{ width: pathname === "/post" ? "70%" : "0%" }}
+            animate={{ width: pathname === "/" ? "100%" : "0%" }}
             whileHover={{ width: "50%" }}
           />
         </p>
+
         <p>
-          <NavLink className="" activeClassName="" to="/project">
-            Projects
+          <NavLink
+            className="text-red-200 hover:text-green-800"
+            activeClassName=""
+            to="/post"
+          >
+            Properties
           </NavLink>
+          <Line
+            transition={{ duration: 0.75 }}
+            initial={{ width: "0%" }}
+            animate={{ width: pathname === "/post" ? "100%" : "0%" }}
+            whileHover={{ width: "50%" }}
+          />
         </p>
+
         <p>
           <NavLink className="" activeClassName="" to="/about">
             About us

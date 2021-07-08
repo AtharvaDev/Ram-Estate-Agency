@@ -32,24 +32,25 @@ function Testimonials() {
         <h1>CLIENTS TESTIMONIALS</h1>
         <p>Realize all your real estate needs in a promising locality.</p>
       </div>
-
-      <Carousel
-        showArrows={true}
-        infiniteLoop={true}
-        showThumbs={false}
-        showStatus={false}
-        autoPlay={true}
-        interval={6100}
-      >
-        {TestData &&
-          TestData.map((post, index) => (
-            <div className="testimonials" key={index}>
-              <img src={post.mainImage.asset.url} alt="" />
-              <h3>{post.name}</h3>
-              <p>{post.description}</p>
-            </div>
-          ))}
-      </Carousel>
+      <div className="testimonials__Carousel">
+        <Carousel
+          showArrows={true}
+          infiniteLoop={true}
+          showThumbs={false}
+          showStatus={false}
+          autoPlay={true}
+          interval={6100}
+        >
+          {TestData &&
+            TestData.map((post, index) => (
+              <div className="testimonials" key={index}>
+                <img src={post.mainImage.asset.url} alt="" />
+                <h3>{post.name}</h3>
+                <p>{post.description}</p>
+              </div>
+            ))}
+        </Carousel>
+      </div>
     </>
   );
 }

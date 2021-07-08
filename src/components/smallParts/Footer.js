@@ -8,7 +8,7 @@ function Footer() {
       <div className="footer__one flex justify-between pl-5 pr-5">
         <img src={logo} height="" width="200px" alt="" />
         <h2>
-          © 2021 - RAM ESTATE AGENCY DESIGNED BY{" "}
+          © Copyright 2021 - RAM ESTATE AGENCY. All Rights Reserved. DESIGNED BY{" "}
           <a href="https://www.linkedin.com/in/atharvadev/">
             <b>ATHARVA DESHMUKH</b>{" "}
           </a>

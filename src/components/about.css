@@ -1,0 +1,159 @@
+.about .LandNav {
+  background-color: white !important;
+}
+.about .LandNav__black {
+  background-color: white !important;
+  opacity: 1;
+}
+
+.About__topBar__mobileImg {
+  display: none;
+}
+
+.About__topBar {
+  background-image: url(../img/aboutUs/bg1.png);
+  height: 150px;
+  margin-bottom: 30px;
+  margin-top: 100px;
+  background-repeat: no-repeat !important;
+  background-position: center bottom;
+}
+
+.About__topBar p {
+  font-size: 30px;
+  font-weight: 400;
+  max-width: 650px;
+  text-align: center;
+  margin-right: 100px;
+  float: right;
+  padding: 10px 0px 23px;
+  line-height: 34px;
+  margin: auto;
+}
+
+.About__topBar span {
+  background: url(../img/aboutUs/bg2.png);
+  background-repeat: no-repeat !important;
+  background-position: center bottom;
+  background-size: 110%;
+  color: #e90029;
+  padding-bottom: 6px;
+}
+
+.About__body h1 {
+  text-align: center;
+  font-weight: 600;
+}
+
+.About__body__rdLine {
+  width: 415px;
+  border: 2px solid #e90029;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2px;
+}
+
+.About__body p {
+  margin-bottom: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: #333;
+}
+
+@media only screen and (max-width: 600px) {
+  .about .LandNav {
+    background-color: aliceblue !important;
+  }
+  .About__body__rdLine {
+    width: 300px;
+  }
+
+  .About__topBar {
+    height: 400px;
+  }
+
+  .About__topBar__mobileImg {
+    display: block;
+    margin-top: 150px;
+    background-image: url(../img/aboutUs/bg1.png);
+    height: 150px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat !important;
+    /* background-position: center bottom; */
+  }
+}
+
+/* MAP SECTION ///////////////////////////// */
+
+.About__body__map__body__one__mobile {
+  display: none;
+}
+
+.About__body__rdLine__location {
+  width: 150px;
+  border: 2px solid #e90029;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2px;
+}
+
+.About__body__map {
+  margin-top: 50px;
+}
+
+.About__body__map__body {
+  margin-right: 10vw;
+  margin-left: 10vw;
+  margin-bottom: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.About__body__map h1 {
+  text-align: center;
+  font-weight: 600;
+}
+
+.About__body__map__body__two {
+  margin-left: 50px;
+}
+
+.About__body__map__body__two h2 {
+  font-size: 22px;
+  margin: auto;
+  text-align: center;
+}
+
+.About__body__contact div {
+  margin: 0px !important;
+}
+
+.About__body__mail div {
+  /* margin: 0px !important; */
+}
+
+.About__body__mail span {
+  flex: 0.8;
+}
+
+@media only screen and (max-width: 600px) {
+  .About__body__map__body {
+    flex-direction: column;
+  }
+  .About__body__map__body__two {
+    margin-left: 0px !important;
+    margin-top: 30px;
+  }
+
+  .About__body__map__body__one {
+    display: none !important;
+  }
+
+  .About__body__map__body__one__mobile {
+    display: block;
+  }
+}

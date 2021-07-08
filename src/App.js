@@ -7,6 +7,7 @@ import Project from "./components/Project";
 import Post from "./components/Post";
 import WhatsAppWidget from "react-whatsapp-widget";
 import "react-whatsapp-widget/dist/index.css";
+import Footer from "./components/smallParts/Footer";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route component={Project} path="/project" />
         </Switch>
       </BrowserRouter>
+      <Footer />
     </>
   );
 }

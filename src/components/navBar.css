@@ -11,9 +11,10 @@
   padding: 15px;
   /* margin-top: 15px; */
   /* margin-left: 15px; */
-  z-index: 100;
+  z-index: 100000;
   transition-timing-function: ease-in;
   transition: all 0.5s;
+  box-shadow: 0 0 20px -10px rgb(0 0 0 / 80%);
 }
 
 .LandNav__black {
@@ -88,6 +89,14 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .LandNav__center {
+    justify-content: space-evenly;
+  }
+
+  .LandNav__center p {
+    margin-left: 0px !important;
+  }
+
   .LandNav {
     flex-direction: column !important;
   }

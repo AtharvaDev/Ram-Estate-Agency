@@ -7,9 +7,11 @@ import homebg1 from "../img/homeAssets/b-shape4.png";
 import homebg2 from "../img/homeAssets/b-shape2.png";
 import homebg3 from "../img/homeAssets/b-shape3.png";
 import homebg6 from "../img/homeAssets/b-shape6.png";
+import testbg1 from "../img/bg-slide-img-1.png";
+import testbg2 from "../img/bg-slide-img-2.png";
 
-import building from "../components/lottieFiles/20033-buildings-going-up.json";
-import LottieAnimation from "./lottieFiles/Lottie";
+// import LottieAnimation from "./lottieFiles/Lottie";
+import Testimonials from "./smallParts/Testimonials";
 
 function Home() {
   return (
@@ -52,7 +54,15 @@ function Home() {
         <img src={homebg6} alt="" />
       </div>
 
-      <section style={{ height: "100vh", backgroundColor: "blue" }}></section>
+      <section>
+        <div class="testimonial__banner__shapeOne">
+          <img src={testbg1} alt=""></img>
+        </div>
+        <div className="testimonial__banner__shapeTwo">
+          <img src={testbg2} alt="" />
+        </div>
+        <Testimonials />
+      </section>
 
       <section className="home__contact">
         <div>
@@ -68,10 +78,23 @@ function Home() {
           >
             Loading…
           </iframe>
+
+          <iframe
+            className="home__contact__form__mobile"
+            title="contact us mobile"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSf-xsxuLztuWZk7k5GzFuzjT8DpTAZgNt1etzKPgNsUmSEeDQ/viewform?embedded=true"
+            width="350"
+            height="840"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+          >
+            Loading…
+          </iframe>
         </div>
       </section>
 
-      <section style={{ height: "100vh", backgroundColor: "blue" }}></section>
+      {/* <section style={{ height: "100vh", backgroundColor: "blue" }}></section> */}
     </div>
   );
 }

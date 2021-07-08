@@ -1,0 +1,19 @@
+.footer {
+  background-color: white;
+  box-shadow: 0 0 8px 0 rgb(0 0 0 / 12%);
+  padding: 10px;
+}
+
+.footer__one {
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer__one {
+    flex-direction: column !important;
+  }
+
+  .footer__one img {
+    margin: auto;
+  }
+}

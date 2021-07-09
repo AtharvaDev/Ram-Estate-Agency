@@ -207,6 +207,78 @@
 }
 
 /* section end ................................................................................ */
+.section__achieve h1 {
+  text-align: center;
+}
+
+.achieve {
+  height: 200px;
+}
+
+.achieve,
+.achieve__body {
+  position: relative;
+}
+
+.achieve::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background-image: url(../img/Buildings-outer-wrapper.png);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+.achieve__body {
+  display: flex;
+  justify-content: space-around;
+}
+
+.achieve__one span,
+.achieve__two span,
+.achieve__three span {
+  font-size: 69px;
+  font-weight: 600;
+  color: #222;
+  line-height: 1;
+  opacity: 1 !important;
+  z-index: 2;
+}
+
+.achieve__one h2,
+.achieve__two h2,
+.achieve__three h2 {
+  /* text-align: center; */
+  font-size: 20px;
+  font-weight: 400;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .achieve__body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .achieve {
+    height: 100%;
+    padding-bottom: 30px !important;
+  }
+
+  .section__achieve h1 {
+    margin-top: 50px !important;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px !important;
+  }
+}
+
+/* section end ................................................................................ */
 
 .home__contact {
   background-image: url("../img/HomeContact/1.jpg");

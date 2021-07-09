@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 // import bg from "../img/bg-1.png";
 import NavBar from "./NavBar";
+import VisibilitySensor from "react-visibility-sensor";
 import "./home.css";
 import homebg1 from "../img/homeAssets/b-shape4.png";
 import homebg2 from "../img/homeAssets/b-shape2.png";
@@ -12,6 +13,7 @@ import testbg2 from "../img/bg-slide-img-2.png";
 
 // import LottieAnimation from "./lottieFiles/Lottie";
 import Testimonials from "./smallParts/Testimonials";
+import CountUp from "react-countup";
 
 function Home() {
   return (
@@ -62,6 +64,46 @@ function Home() {
           <img src={testbg2} alt="" />
         </div>
         <Testimonials />
+      </section>
+
+      <section className="section__achieve">
+        <h1>Find Your Dream Home With Our Guidance.</h1>
+        <div className="achieve pt-5 pb-5 ">
+          <div className="container mx-auto">
+            <div className="achieve__body mt-5 ">
+              <div className="achieve__one">
+                <CountUp end={1000} suffix="+" redraw={true}>
+                  {({ countUpRef, start }) => (
+                    <VisibilitySensor onChange={start} delayedCall>
+                      <span ref={countUpRef} />
+                    </VisibilitySensor>
+                  )}
+                </CountUp>
+                <h2 className="mt-2"> Satisfied Clients</h2>
+              </div>
+              <div className="achieve__two">
+                <CountUp end={450} suffix="+" redraw={true}>
+                  {({ countUpRef, start }) => (
+                    <VisibilitySensor onChange={start} delayedCall>
+                      <span ref={countUpRef} />
+                    </VisibilitySensor>
+                  )}
+                </CountUp>
+                <h2 className="mt-2">Protperty Sale​</h2>
+              </div>
+              <div className="achieve__three">
+                <CountUp end={550} suffix="+" redraw={true}>
+                  {({ countUpRef, start }) => (
+                    <VisibilitySensor onChange={start} delayedCall>
+                      <span ref={countUpRef} />
+                    </VisibilitySensor>
+                  )}
+                </CountUp>
+                <h2 className="mt-2">Property Rent​</h2>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section className="home__contact">

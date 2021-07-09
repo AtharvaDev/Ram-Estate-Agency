@@ -39,7 +39,7 @@ function NavBar() {
         <img src={logo} alt="Ram Real Estate" />
       </NavLink>
       <div className="LandNav__center">
-        <p>
+        <motion.p whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}>
           <NavLink
             className="text-red-200 hover:text-green-800"
             activeClassName=""
@@ -53,9 +53,9 @@ function NavBar() {
             animate={{ width: pathname === "/" ? "100%" : "0%" }}
             whileHover={{ width: "50%" }}
           />
-        </p>
+        </motion.p>
 
-        <p>
+        <motion.p whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}>
           <NavLink
             className="text-red-200 hover:text-green-800"
             activeClassName=""
@@ -69,21 +69,27 @@ function NavBar() {
             animate={{ width: pathname === "/post" ? "100%" : "0%" }}
             whileHover={{ width: "50%" }}
           />
-        </p>
+        </motion.p>
 
-        <p>
+        <motion.p whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}>
           <NavLink className="" activeClassName="" to="/about">
             About us
           </NavLink>
-        </p>
+          <Line
+            transition={{ duration: 0.75 }}
+            initial={{ width: "0%" }}
+            animate={{ width: pathname === "/about" ? "100%" : "0%" }}
+            whileHover={{ width: "50%" }}
+          />
+        </motion.p>
       </div>
       <div className="LandNav__right">
-        <p>
+        <motion.p whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}>
           <a href="tel:+91 99871 30717">
             <FontAwesomeIcon style={{ marginRight: "10px" }} icon={faPhone} />
             9987130717
           </a>
-        </p>
+        </motion.p>
       </div>
     </div>
   );

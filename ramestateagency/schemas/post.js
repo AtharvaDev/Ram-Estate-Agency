@@ -28,7 +28,7 @@ export default {
     {
       name: "bhk",
       title: "BHK",
-      description: "Example - '2BHK/3BHK' or '2BHK'",
+      description: "Example - '2/3BHK' or '2BHK'",
       type: "string",
     },
     {
@@ -61,6 +61,8 @@ export default {
     {
       name: "category",
       title: "Categories",
+      description: "You can skip this part no",
+
       type: "array",
       of: [{ type: "reference", to: { type: "category" } }],
     },

@@ -41,9 +41,9 @@ function About() {
               Agent in Thane, Maharashtra. With new improved realty solutions in
               each sphere, we have carved a niche for ourselves in the realty
               sector. Our approach is based on professionalism, trust and
-              respect for the consumer The experience of transacting and having
+              respect for the consumer. The experience of transacting and having
               a practical approach at work in each segments of real estate has
-              given Mukesh Estate Agency an edge over its competition.
+              given Ram Estate Agency an edge over its competition.
             </p>
             <p>
               Our services are for Residential Property, Commercial Property,

@@ -109,7 +109,7 @@ function Home() {
                       </VisibilitySensor>
                     )}
                   </CountUp>
-                  <h2 className="mt-2">Protperty Sale​</h2>
+                  <h2 className="mt-2">Property Sale​</h2>
                 </div>
                 <div className="achieve__three">
                   <CountUp end={550} suffix="+" redraw={true}>

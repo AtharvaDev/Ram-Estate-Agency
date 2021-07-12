@@ -26,6 +26,10 @@ function App() {
         </div>
       </Draggable>
 
+      {/* <div className="App__WhatsAppWidget__mobile_one">
+        <div className="_1bpcM"></div>
+      </div> */}
+
       <div className="App__WhatsAppWidget__mobile">
         <WhatsAppWidget
           companyName="Ram Estate Agency"

@@ -11,6 +11,11 @@
 @media only screen and (max-width: 600px) {
   .footer__one {
     flex-direction: column !important;
+    text-align: center;
+  }
+
+  .footer__one h2 {
+    text-align: center;
   }
 
   .footer__one img {

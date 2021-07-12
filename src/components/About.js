@@ -91,11 +91,20 @@ function About() {
             <div className="About__body__map__body__two">
               <h2 className="mb-2">REACH US THROUGH</h2>
               <div className="flex mt-3">
-                <LottieAnimation lotti={location} height="80px" width="80px" />
+                <a href="https://goo.gl/maps/E5z9f4CdWmZ7E7ri7">
+                  <LottieAnimation
+                    lotti={location}
+                    height="80px"
+                    width="80px"
+                  />{" "}
+                </a>
+
                 <p className="pl-3">
-                  Kavya Residencies Shop No 05, <br />
-                  Gb Road, Kasarvadavali, <br />
-                  Thane - 400615
+                  <a href="https://goo.gl/maps/E5z9f4CdWmZ7E7ri7">
+                    Kavya Residencies Shop No 05, <br />
+                    Gb Road, Kasarvadavali, <br />
+                    Thane - 400615
+                  </a>
                 </p>
               </div>
               <div className="flex mt-3 About__body__contact">

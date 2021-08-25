@@ -68,7 +68,8 @@ function About() {
           <div className="About__body__map__body ">
             <div className="About__body__map__body__one">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1293.7172786502474!2d72.96410928436245!3d19.264645064411685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf5329b9e3c39a0c0!2sKavya%20Residency!5e0!3m2!1sen!2sin!4v1625762179410!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30136.08799074555!2d72.95916612681589!3d19.238352417664384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bb9d1547b82b%3A0x6ceac92aecd02cd6!2sRam%20Estate%20Agency!5e0!3m2!1sen!2sin!4v1629136246272!5m2!1sen!2sin"
+                // src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1293.7172786502474!2d72.96410928436245!3d19.264645064411685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf5329b9e3c39a0c0!2sKavya%20Residency!5e0!3m2!1sen!2sin!4v1625762179410!5m2!1sen!2sin"
                 title="map"
                 width="600"
                 height="450"
@@ -91,7 +92,7 @@ function About() {
             <div className="About__body__map__body__two">
               <h2 className="mb-2">REACH US THROUGH</h2>
               <div className="flex mt-3">
-                <a href="https://goo.gl/maps/E5z9f4CdWmZ7E7ri7">
+                <a href="https://goo.gl/maps/GB2Jb5X6jmdA4JzE7">
                   <LottieAnimation
                     lotti={location}
                     height="80px"
@@ -100,7 +101,8 @@ function About() {
                 </a>
 
                 <p className="pl-3">
-                  <a href="https://goo.gl/maps/E5z9f4CdWmZ7E7ri7">
+                  <a href="https://goo.gl/maps/GB2Jb5X6jmdA4JzE7">
+                    Ram Estate Agency, <br />
                     Kavya Residencies Shop No 05, <br />
                     Gb Road, Kasarvadavali, <br />
                     Thane - 400615
